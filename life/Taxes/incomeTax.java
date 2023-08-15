@@ -8,7 +8,7 @@ https://www.irs.gov/newsroom/irs-provides-tax-inflation-adjustments-for-tax-year
 class incomeTax {
    public static void main(String[] args) {
       Scanner keyboard = new Scanner(System.in);
-      System.out.println("Please tell us how much you have earned this year as an integer.");
+      System.out.print("Please tell us how much you have earned this year as an integer: $");
       int income = keyboard.nextInt();
       income -= 13850; // Standard deduction for single filing
       float taxIncome = (float)income; // Explicit type casting
@@ -42,7 +42,7 @@ class incomeTax {
       if (incomeTaxValue == 0) {
          System.out.println("You don't have to pay any income tax");
       } else {
-         System.out.printf("You have to pay an income tax of $%.2f %n",incomeTaxValue); // We need to round to 2 decimal places because of cents
+         System.out.printf("You have to pay an income tax of $%.2f %n",incomeTaxValue); // Rounding because we can only pay at minimum, in cents(you can't pay half a cent)
       }
    }
 }
