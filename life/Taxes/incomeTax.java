@@ -10,8 +10,8 @@ class incomeTax {
       Scanner keyboard = new Scanner(System.in);
       System.out.println("Please tell us how much you have earned this year as an integer.");
       int income = keyboard.nextInt();
-      income -= 13850;
-      float taxIncome = (float)income;
+      income -= 13850; // Standard deduction for single filing
+      float taxIncome = (float)income; // Explicit type casting
       float incomeTaxValue = 0;
       while (taxIncome > 0) {
          float remainder;
@@ -42,7 +42,7 @@ class incomeTax {
       if (incomeTaxValue == 0) {
          System.out.println("You don't have to pay any income tax");
       } else {
-         System.out.printf("You have to pay an income tax of $%.2f %n",incomeTaxValue);
+         System.out.printf("You have to pay an income tax of $%.2f %n",incomeTaxValue); // We need to round to 2 decimal places because of cents
       }
    }
 }
