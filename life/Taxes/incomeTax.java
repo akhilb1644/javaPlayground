@@ -42,7 +42,7 @@ class incomeTax {
       if (incomeTaxValue == 0) {
          System.out.println("You don't have to pay any income tax");
       } else {
-         System.out.printf("You have to pay an income tax of $%.2f %n",incomeTaxValue); // Rounding because we can only pay at minimum, in cents(you can't pay half a cent)
+         System.out.printf("You have to pay an income tax of $%,.2f",incomeTaxValue); // Rounding because we can only pay at minimum, in cents(you can't pay half a cent)
       }
    }
 }
