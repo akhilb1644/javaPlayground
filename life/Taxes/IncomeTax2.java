@@ -13,7 +13,7 @@ class IncomeTax2 {
       int taxIncome = calculateTaxableIncome(deductions,grossIncome);
       float taxValue = incomeTaxCalc((float)taxIncome);
       System.out.println(name + ",");
-      System.out.printf("\tYou must pay $%,.2f in income tax to the federal government.", taxValue);
+      System.out.printf("\tYou must pay $%,.2f in income tax to the federal government.", taxValue); // Rounding because you can't go past two decimal places because you can only pay at the lowest end, in cents.
    }
    
    public static float incomeTaxCalc(float taxIncome) {
@@ -40,7 +40,7 @@ class IncomeTax2 {
             remainder = taxIncome - 11000;
             incomeTaxValue += remainder * 0.12;
             taxIncome = 11000;
-         } else {
+         } else { // Remainder isn't needed for this one because it is only for when the income tax bracket has a lower end above zero
             incomeTaxValue += taxIncome * 0.1;
             taxIncome = 0;
          }
