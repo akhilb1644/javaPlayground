@@ -11,7 +11,7 @@ class IncomeTax2 {
       System.out.print("Please state the cumulative value of the untaxed deductions: ");
       int deductions = keyboard.nextInt();
       int taxIncome = calculateTaxableIncome(deductions,grossIncome);
-      float taxValue = incomeTaxCalc((float)taxIncome);
+      float taxValue = incomeTaxCalc((float)taxIncome); // Good ol' type casting(so the method doesn't give an error for the wrong type)
       System.out.println(name + ",");
       System.out.printf("\tYou must pay $%,.2f in income tax to the federal government.", taxValue); // Rounding because you can't go past two decimal places because you can only pay at the lowest end, in cents.
    }
