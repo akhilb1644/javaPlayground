@@ -684,7 +684,7 @@ class IncomeTax3 {
                   taxValue += remainder * 0.109;
                   taxIncome = 25000000;
                } else if (taxIncome > 5000000) {
-                  remainder = taxIncome * 5000000;
+                  remainder = taxIncome - 5000000;
                   taxValue += remainder * 0.103;
                   taxIncome = 5000000;
                } else if (taxIncome > 1077550) {
