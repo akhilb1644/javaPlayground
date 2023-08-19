@@ -38,7 +38,6 @@ class IncomeTax3 {
             System.out.println("PLEASE PICK A VALID NUMBER FROM 1-50.");
          } else {
             stateTaxValue += calculateStateIncomeTax(deductions,grossIncome,stateNum,states[stateNum - 1]);
-            break;
          }
       } while (stateNum < 1 || stateNum > 50);
       
