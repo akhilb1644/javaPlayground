@@ -964,7 +964,7 @@ class IncomeTax3 {
             break;
          
          default:
-            System.out.println("You don't have to pay any state income tax in your state!");
+            System.out.println("You don't have to pay any state income tax in your state: " + state + "!");
             // If you live in Alaska, Florida, Nevada, New Hampshire, South Dakota, Tennessee, Texas, Washington, or Wyoming, then life's good(paperwork wise, there is no income tax)
             incomeTax = false;
             break;
