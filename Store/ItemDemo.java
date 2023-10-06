@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 /*
-I would just like to say that if you want to run this code on your end, feel free to change the items in the inventory, but keep this same format:
+I would just like to say that if you want to run this code on your end, feel free to change the items in the inventory, but keep this same format if you don't want to change the code(if you want to, do whatever format you want):
 
 Name
 Price
