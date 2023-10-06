@@ -1,6 +1,19 @@
 import java.io.*;
 import java.util.*;
 
+/*
+I would just like to say that if you want to run this code on your end, feel free to change the items in the inventory, but keep this same format:
+
+Name
+Price
+Number available
+
+Ex:
+Couch
+2000
+12
+*/
+
 public class ItemDemo {
    public static void main(String[] args) throws IOException {
       String prefix = "temporaryRecipt";
