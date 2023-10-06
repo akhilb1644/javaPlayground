@@ -1,0 +1,4 @@
+Item            Quantity        Price
+Raspberry       8               $6.87
+------------------------------------------------
+Total Price: $54.96
