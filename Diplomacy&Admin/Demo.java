@@ -11,7 +11,7 @@ public class Demo {
       Country tajikistan = new Country("Republic of Tajikistan",Continent.ASIA);
       Subdivision gb = new Subdivision("Gorno Badakshan",tajikistan);
       
-      Alliance pamiri = new Alliance("Pamiri Cooperation Pact",tajikistan,china);
+      Alliance pamiri = new Alliance("Pamiri Cooperation Pact",tajikistan,china); // I just totally made up this alliance by the way
       pamiri.printCountries();
    }
 }
