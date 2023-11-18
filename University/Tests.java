@@ -1,0 +1,1 @@
+enum Tests {ACT,SAT};
