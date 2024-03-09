@@ -38,34 +38,3 @@ public class Mapper {
 		System.out.println(" ");
 	}
 }
-
-/*
-Output:
-
-Josef Stalin -> 1878
-Leonid Brezhnev -> 1906
-Mikhail Gorbachev -> 1931
-Konstantin Chernenko -> 1911
-Vyacheslav Molotov -> 1890
-Nikita Khrushchev -> 1894
-Yuri Andropov -> 1914
-Vladimir Lenin -> 1780
-
-Josef Stalin -> 1878
-Leonid Brezhnev -> 1906
-Mikhail Gorbachev -> 1931
-Konstantin Chernenko -> 1911
-Vyacheslav Molotov -> 1890
-Nikita Khrushchev -> 1894
-Yuri Andropov -> 1914
-Vladimir Lenin -> 1870
-
-Josef Stalin -> 1878
-Leonid Brezhnev -> 1906
-Mikhail Gorbachev -> 1931
-Konstantin Chernenko -> 1911
-Nikita Khrushchev -> 1894
-Yuri Andropov -> 1914
-Vladimir Lenin -> 1870
-
-*/

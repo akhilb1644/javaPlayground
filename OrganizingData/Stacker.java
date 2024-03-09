@@ -20,13 +20,3 @@ public class Stacker {
 		System.out.println(states.search("Arkansas"));
 	}
 }
-
-/*
-Output:
-
-[Alabama, Alaska, Arizona]
-Arizona
-[Alabama, Alaska]
-2
--1
-*/
