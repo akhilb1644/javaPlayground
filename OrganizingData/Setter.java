@@ -32,14 +32,3 @@ public class Setter {
 		System.out.println("Does the first set contain Appalachia? " + regions.contains("Appalachia"));
 	}
 }
-
-/*
-Output:
-
-First set: [Ozarks, Badlands]
-Second set: [Cascadia, Ozarks, Piney Woods]
-First and Second Sets: [Cascadia, Ozarks, Badlands, Piney Woods]
-Intersection of First and Second Sets: [Ozarks]
-Difference between First and Second Sets: [Cascadia, Piney Woods]
-Does the first set contain Appalachia? false
-*/
