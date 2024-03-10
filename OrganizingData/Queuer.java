@@ -19,3 +19,11 @@ public class Queuer {
 		System.out.println(countries);
 	}
 }
+
+/*
+Output:
+[France]
+[France, Sweden]
+[Sweden]
+
+*/
