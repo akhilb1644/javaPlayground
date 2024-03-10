@@ -23,7 +23,7 @@ public class Queuer {
 /*
 Output:
 [France]
-[France, Sweden]
+Without violating the capacity restriction: [France, Sweden]
 [Sweden]
 
 */
