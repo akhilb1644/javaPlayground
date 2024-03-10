@@ -63,34 +63,13 @@ These are unordered, so they won't show up in the below order
 		b.putAll(birthYears);
 		
 		System.out.println(b + "\n");
+
+		System.out.println(birthYears.values() + "\n"); // This is a collection
+
+		System.out.println("Are the maps \"birthYears\" and \"b\" equal to eachother? " + birthYears.equals(b) + "\n");
+
+		System.out.println(birthYears.getOrDefault("Alexei Rykov",1881) + "\n");
+
+		System.out.println("\"birthYears\" after getOrDefault method: " + birthYears + "\n");
 	}
 }
-
-/*
-Output:
-{Josef Stalin=1878, Leonid Brezhnev=1906, Mikhail Gorbachev=1931, Konstantin Chernenko=1911, Vyacheslav Molotov=1890, Nikita Khrushchev=1894, Yuri Andropov=1914, Vladimir Lenin=1780}
-
-{Josef Stalin=1878, Leonid Brezhnev=1906, Mikhail Gorbachev=1931, Konstantin Chernenko=1911, Vyacheslav Molotov=1890, Nikita Khrushchev=1894, Yuri Andropov=1914, Vladimir Lenin=1870}
-
-{Josef Stalin=1878, Leonid Brezhnev=1906, Mikhail Gorbachev=1931, Konstantin Chernenko=1911, Nikita Khrushchev=1894, Yuri Andropov=1914, Vladimir Lenin=1870}
-
-{}
-
-{Josef Stalin=1878, Leonid Brezhnev=1906, Mikhail Gorbachev=1931, Konstantin Chernenko=1911, Nikita Khrushchev=1894, Yuri Andropov=1914, Vladimir Lenin=1870}
-
-Is Vyacheslav Molotov there? false
-
-Was someone born in 1893? false
-
-Set version is: [Josef Stalin=1878, Leonid Brezhnev=1906, Mikhail Gorbachev=1931, Konstantin Chernenko=1911, Nikita Khrushchev=1894, Yuri Andropov=1914, Vladimir Lenin=1870]
-
-Nikita Khrushchev was born in the year 1894.
-
-Hash code for map "birthYears" is = 2074808840
-
-Is the map empty? false
-
-List of Soviet Leaders: [Josef Stalin, Leonid Brezhnev, Mikhail Gorbachev, Konstantin Chernenko, Nikita Khrushchev, Yuri Andropov, Vladimir Lenin]
-
-{Josef Stalin=1878, Leonid Brezhnev=1906, Mikhail Gorbachev=1931, Konstantin Chernenko=1911, Nikita Khrushchev=1894, Yuri Andropov=1914, Vladimir Lenin=1870}
-*/
