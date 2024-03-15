@@ -1,3 +1,5 @@
 public class Btree {
-   private String name; 
+   private int num;
+   private int leftChildNum;
+   private int rightChildNum; 
 }
