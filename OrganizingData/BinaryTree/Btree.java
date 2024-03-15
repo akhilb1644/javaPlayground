@@ -4,4 +4,8 @@ public class Btree {
    public Btree(Node start) {
       this.start = start;
    }
+   
+   public Node getStart() {
+      return start;
+   }
 }
