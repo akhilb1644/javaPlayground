@@ -1,6 +1,4 @@
-public class AutonomousRepublic extends Subdivision {
-	protected Republic parentRepublic;
-
+public class AutonomousRepublic extends Subdivision,AutonomousSubdivision {
 	public AutonomousRepublic() {
 		super();
 		parentRepublic = new Republic();
@@ -22,5 +20,13 @@ public class AutonomousRepublic extends Subdivision {
 
 	public void setParentRepublic(Republic parentRepublic) {
 		this.parentRepublic = new Republic(parentRepublic);
+	}
+
+	public int getFunding() {
+		return funding;
+	}
+
+	public int setFunding(int funding) {
+		this.funding = funding;
 	}
 }

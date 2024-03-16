@@ -1,23 +1,9 @@
-public class Subdivision {
+public abstract class Subdivision {
+	protected int funding;
 	protected String name;
 
-	public Subdivision() {
-		name = "Unknown";
-	}	
-
-	public Subdivision(String name) {
-		this.name = name;
-	}
-
-	public Subdivision(Subdivision s) {
-		name = s.getName();
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
+	abstract void setName(String name);
+	abstract String getName();
+	abstract void setFunding(int funding);
+	abstract int getFunding();
 }
