@@ -11,12 +11,10 @@ public class Oblast extends Subdivision {
 		this.higherRepublic = new Republic(higherRepublic);
 	}
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
+	public Oblast(Oblast oblast) {
+		name = oblast.getName();
+		higherRepublic =  oblast.getHigherRepublic();
+		funding = oblast.getFunding();
 	}
 
 	public Republic getHigherRepublic() {

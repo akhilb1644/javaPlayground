@@ -1,6 +1,9 @@
+import java.util.ArrayList;
+
 public class Republic extends Subdivision {
 	protected Type republicType;
 	protected String name;
+	private ArrayList<Oblast> oblasts;
 
 	public Republic() {
 		name = "";
@@ -23,5 +26,9 @@ public class Republic extends Subdivision {
 
 	public void setRepublicType(Type republicType) {
 		this.republicType = republicType;
+	}
+
+	public void addOblast(Oblast oblast) {
+		oblasts.add(new Oblast(oblast));
 	}
 }
