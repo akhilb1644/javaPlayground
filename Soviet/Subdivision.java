@@ -1,9 +1,20 @@
 public abstract class Subdivision {
-	protected int funding;
+	protected int funding = 0;
 	protected String name;
 
-	abstract void setName(String name);
-	abstract String getName();
-	abstract void setFunding(int funding);
-	abstract int getFunding();
-}
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setFunding(int funding) {
+		this.funding = funding;
+	}
+
+	public int getFunding() {
+		return funding;
+	}
+}		

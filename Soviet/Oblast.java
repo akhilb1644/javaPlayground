@@ -8,7 +8,7 @@ public class Oblast extends Subdivision {
 
 	public Oblast(String name,Republic higherRepublic) {
 		this.name = name;
-		this.higherRepublic = new Republic(Republic);
+		this.higherRepublic = new Republic(higherRepublic);
 	}
 
 	public String getName() {

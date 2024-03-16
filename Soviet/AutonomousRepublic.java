@@ -1,32 +1,32 @@
-public class AutonomousRepublic extends Subdivision,AutonomousSubdivision {
+public class AutonomousRepublic extends AutonomousSubdivision {
 	public AutonomousRepublic() {
-		super();
-		parentRepublic = new Republic();
+		name = "";
+		higherRepublic = new Republic();
 	}
 
-	public AutonomousRepublic(String name,Republic parentRepublic) {
-		super(name);
-		this.parentRepublic = new Republic(parentRepublic);
+	public AutonomousRepublic(String name,Republic higherRepublic) {
+		this.name = name;
+		this.higherRepublic = new Republic(higherRepublic);
 	}
 
 	public AutonomousRepublic(AutonomousRepublic a) {
 		name = a.getName();
-		parentRepublic = a.getParentRepublic();
+		higherRepublic = a.getHigherRepublic();
 	}
 
-	public Republic getParentRepublic() {
-		return new Republic(parentRepublic);
+	public Republic getHigherRepublic() {
+		return new Republic(higherRepublic);
 	}
 
-	public void setParentRepublic(Republic parentRepublic) {
-		this.parentRepublic = new Republic(parentRepublic);
+	public void setHigherRepublic(Republic higherRepublic) {
+		this.higherRepublic = new Republic(higherRepublic);
 	}
 
 	public int getFunding() {
 		return funding;
 	}
 
-	public int setFunding(int funding) {
+	public void setFunding(int funding) {
 		this.funding = funding;
 	}
 }

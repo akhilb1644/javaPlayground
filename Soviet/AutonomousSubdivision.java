@@ -1,6 +1,11 @@
 public abstract class AutonomousSubdivision extends Subdivision {
-	Republic higherRepublic;
+	protected Republic higherRepublic;
 
-	abstract Republic getHigherRepublic();
-	abstract void setHigherRepublic(Republic higherRepublic);
-}	
+	public Republic getHigherRepublic() {
+		return new Republic(higherRepublic);
+	}
+
+	public void setHigherRepublic(Republic higherRepublic) {
+		this.higherRepublic = new Republic(higherRepublic);
+	}
+}

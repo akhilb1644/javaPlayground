@@ -1,4 +1,4 @@
-public class Republic implements Subdivision {
+public class Republic extends Subdivision {
 	protected Type republicType;
 	protected String name;
 
@@ -15,14 +15,6 @@ public class Republic implements Subdivision {
 	public Republic(Republic r) {
 		name = r.getName();
 		republicType = r.getRepublicType();
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
 	}
 
 	public Type getRepublicType() {
