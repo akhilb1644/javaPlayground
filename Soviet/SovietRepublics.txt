@@ -1,0 +1,8 @@
+Federative;Russia
+Federative;Transcaucasia
+Union;Ukraine
+Union;Belarus
+Union;Turkmenistan
+Union;Tajikistan
+Union;Kyrgyzestan
+Union;Uzbekistan
