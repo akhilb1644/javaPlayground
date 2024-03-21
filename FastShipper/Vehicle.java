@@ -58,10 +58,12 @@ abstract class Vehicle {
 
 	// Other Methods
 	
-	public void printInfo() {
-		System.out.println("   Fuel Capacity: " + fuelCapacity);
-		System.out.println("   Miles Per Gallon: " + milesPerGallon);
-		System.out.println("   Volume: " + volume); 
-		System.out.println("   Price: " + price);
+	public String toString() {
+		String info = "   Fuel Capacity: " + fuelCapacity + "\n";
+		info += "   Miles Per Gallon: " + milesPerGallon + "\n";
+		info += "   Volume: " + volume + "\n"; 
+		info += "   Price: " + "\n";
+      
+      return info;
 	}
 }

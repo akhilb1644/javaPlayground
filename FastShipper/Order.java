@@ -28,4 +28,13 @@ public abstract class Order<T extends Number> {
 	public void setPayment(T payment) {
 		this.payment = payment;
 	}
+   
+   // Other methods
+   
+   public String toString() {
+      String info = "";
+      info += "   " + value.toString();
+      info += "   " + payment.toString();
+      return info;
+   }
 }

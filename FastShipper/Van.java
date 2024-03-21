@@ -8,8 +8,10 @@ public class Van extends Vehicle {
 	}
 
 	@Override
-	public void printInfo() {
-		System.out.println("Type of Vehicle: Van");
-		super.toString();
+	public String toString() {
+		String info = "Type of Vehicle: Van\n";
+		info += super.toString();
+      
+      return info;
 	}
 }

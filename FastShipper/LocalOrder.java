@@ -29,4 +29,15 @@ public class LocalOrder<T extends Number> extends Order<T> {
 	public void setEnd(Building end) {
 		this.end = new Building(end);
 	}
+   
+   // Other
+   
+   @Override
+   public String toString() {
+      String info = super.toString();
+      info += "Start: " + start;
+      info += "End: " + end;
+      
+      return info;
+   }
 }

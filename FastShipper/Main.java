@@ -13,7 +13,10 @@ public class Main {
 		for (int i = 0;i < numPlayers;i++) {
 			System.out.print("What is the name for the player? ");
 			players[i] = new Player(scnr.nextLine());
-			System.out.println(players[i]);
 		}
+      
+      for (Player player: players) {
+         System.out.println(player);
+      }
 	}
 }

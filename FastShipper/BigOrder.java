@@ -29,4 +29,15 @@ public class BigOrder<T extends Number> extends Order<T> {
 	public void setEnd(City end) {
 		this.end = end.getWarehouse();
 	}
+   
+   // Other methods
+   
+   @Override
+   public String toString() {
+      String info = super.toString();
+      info += "Start: " + start;
+      info += "End: " + end;
+      
+      return info;
+   }
 }

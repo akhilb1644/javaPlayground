@@ -64,4 +64,12 @@ public class Building {
 	public void setCity(City city) {
 		this.city = new City(city);
 	} 
+   
+   // Other
+   
+   public String toString() {
+      String info = "";
+      info += name + ", " +  city.getName() + " -- Coordinates: (" + x + "," + y + ")";
+      return info;
+   }
 }

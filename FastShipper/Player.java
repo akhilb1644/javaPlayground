@@ -3,7 +3,7 @@ import java.util.ArrayList;
 @SuppressWarnings("unchecked")
 public class Player {
 	private String name;
-	private ArrayList<Order> orderList = new ArrayList();
+	private ArrayList<Order> orderList = new ArrayList<>();
 	private ArrayList<Vehicle> vehiclesOwned = new ArrayList<>();
 
 	public Player() {
@@ -49,4 +49,28 @@ public class Player {
 	public void setVehiclesOwned(ArrayList<Vehicle> vehicleOwned) {
 		this.vehiclesOwned = (ArrayList<Vehicle>) vehiclesOwned.clone();
 	}
+   
+   // Other methods
+   
+   public String toString() {
+      String info = "";
+      info += name + "\n";
+      if (orderList.size() > 0) {
+         info += "List of Orders:" + "\n\n";
+         
+         for (Order order: orderList) {
+            info += order + "\n";
+         }
+      }
+      
+      if (vehiclesOwned.size() > 0) {
+         info += "List of vehicles owned: " + "\n\n";
+         
+         for (Vehicle vehicle: vehiclesOwned) {
+            info += vehicle + "\n";
+         }
+      }
+      
+      return info;
+   }
 }

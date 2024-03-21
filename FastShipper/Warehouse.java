@@ -6,8 +6,8 @@ public class Warehouse extends Building {
 		super();
 	}
 
-	public Warehouse(String name,short x,short y,City city) {
-		super(name,x,y,city);
+	public Warehouse(short x,short y,City city) {
+		super(city.getName() + " Warehouse",x,y,city);
 	}
 
 	// Copy Constructor
