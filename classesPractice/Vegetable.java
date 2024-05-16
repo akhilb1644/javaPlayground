@@ -1,15 +1,15 @@
 package classesPractice;
 
-public class Fruit extends Food {
+public class Vegetable extends Food {
 	protected boolean seeds;
 	
-	public Fruit() {
-		super(0,"Unknown",FoodType.FRUIT);
+	public Vegetable() {
+		super(0,"Unknown",FoodType.VEGETABLE);
 		seeds = true;
 	}
 	
-	public Fruit(int calories,String name,boolean seeds) {
-		super(calories,name,FoodType.FRUIT);
+	public Vegetable(int calories,String name,boolean seeds) {
+		super(calories,name,FoodType.VEGETABLE);
 		this.seeds = seeds;
 	}
 	

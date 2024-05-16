@@ -1,9 +1,9 @@
 package classesPractice;
 
-public class Food {
-	private int calories;
-	private String name;
-	private FoodType foodType;
+public abstract class Food {
+	protected int calories;
+	protected String name;
+	protected FoodType foodType;
 	
 	public Food() { // no arg constructor
 		calories = 0;
@@ -36,8 +36,9 @@ public class Food {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+/*
 	public void setFoodType(FoodType foodType) {
 		this.foodType = foodType;
 	}
+*/
 }
