@@ -59,4 +59,21 @@ public class Sorting {
 		
 		return a;
 	}
+	
+	public static ArrayList<Integer> bubbleSort(ArrayList<Integer> a) {
+		a = copy(a);
+		
+		for (int i = 0;i < a.size() - 1;i++) {
+			for (int j = 0;j < a.size() - 1;j++) {
+				System.out.println(a);
+				if (a.get(j) > a.get(j + 1)) {
+					holdValue = a.get(j);
+					a.set(j, a.get(j+1));
+					a.set(j+1, holdValue);
+				}
+			}
+		}
+		
+		return a;
+	}
 }
