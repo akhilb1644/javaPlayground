@@ -7,6 +7,7 @@ public class Main {
 		String country;
 		int num;
 		Continent continent;
+		Country yourCountry;
 		
 		System.out.print("Hello, what is the name of your country? ")
 		country = k.nextLine();
@@ -37,5 +38,7 @@ public class Main {
 		} else {
 			continent = Continent.AUSTRALIA;
 		}
+		
+		yourCountry = Country.new(population,name,continent);
 	}
 }
