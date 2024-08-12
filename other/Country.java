@@ -32,4 +32,8 @@ public class Country {
 	public void setContinent(Continent continent) {
 		this.continent = continent;
 	}
+	
+	public String toString() {
+		return String.format("Name: %s \nPopulation: %d \nContinent: %s",name,population,continent);
+	}
 }
