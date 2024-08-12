@@ -1,3 +1,4 @@
+package JavaPlaygroundOther;
 public class Country {
 	private int population;
 	private String name;
