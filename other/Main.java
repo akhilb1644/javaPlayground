@@ -1,4 +1,3 @@
-package JavaPlaygroundOther;
 import java.util.Scanner;
 
 public class Main {
@@ -9,10 +8,10 @@ public class Main {
 		int num;
 		Continent continent;
 		Country yourCountry;
-				
-		System.out.print("Hello, what is the name of your country? ");
+		
+		System.out.print("Hello, what is the name of your country? ")
 		country = k.nextLine();
-				
+		
 		System.out.print("What is the population of this country? ");
 		population = k.nextInt();
 		
@@ -40,7 +39,6 @@ public class Main {
 			continent = Continent.AUSTRALIA;
 		}
 		
-		yourCountry = new Country(population,country,continent);
-		System.out.print(yourCountry);
+		yourCountry = Country.new(population,name,continent);
 	}
 }
