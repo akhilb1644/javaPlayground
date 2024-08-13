@@ -1,9 +1,9 @@
 package JavaPlaygroundOther;
 
 public class PoliticalParty implements Organization {
-	String name;
-	int population;
-	Orientation politicalOrientation;
+	private String name;
+	private int population;
+	private Orientation politicalOrientation;
 	
 	public PoliticalParty() {
 		name = "";
@@ -42,6 +42,6 @@ public class PoliticalParty implements Organization {
 	}
 	
 	public String toString() {
-		return String.format("Name: %s \nPopulation: %d \nOrientation: %s",name,population,politicalOrientation);
+		return String.format("\nName: %s \nPopulation: %d \nOrientation: %s\n",name,population,politicalOrientation);
 	}
 }

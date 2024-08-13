@@ -5,18 +5,22 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner k = new Scanner(System.in);
 		int choice;
+		long lchoice;
 		String ans;
 		boolean b = true;
 		
 		while (b) {
 			System.out.print("Do you want to create a new...\n"
 					+ "1. Country\n"
-					+ "2. Political\n"
-					+ "3. I don't want anything\n"
+					+ "2. Political Party\n"
+					+ "3. Business\n"
+					+ "4. I don't want anything\n"
 					+ "Which one do you want? ");
 			choice = k.nextInt();
 			
 			ans = k.nextLine();
+			
+			System.out.println("");
 			
 			if (choice == 1) {
 				Country yourCountry = new Country();
@@ -93,6 +97,22 @@ public class Main {
 				}
 				
 				System.out.println(yourParty);
+			} else if (choice == 3) {
+				Business yourBusiness = new Business();
+				
+				System.out.print("Hello, what is the name of your business? ");
+				ans = k.nextLine();
+				yourBusiness.setName(ans);
+				
+				System.out.print("How many employees does the business employ? ");
+				choice = k.nextInt();
+				yourBusiness.setPopulation(choice);
+				
+				System.out.print("What is the net worth of your business? ");
+				lchoice = k.nextLong();
+				yourBusiness.setNetWorth(lchoice);
+				
+				System.out.println(yourBusiness);
 			} else {
 				System.out.println("Bye bye");
 				b = false;

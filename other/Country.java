@@ -41,6 +41,6 @@ public class Country implements Organization {
 	}
 	
 	public String toString() {
-		return String.format("Name: %s \nPopulation: %d \nContinent: %s",name,population,continent);
+		return String.format("\nName: %s \nPopulation: %d \nContinent: %s\n",name,population,continent);
 	}
 }
