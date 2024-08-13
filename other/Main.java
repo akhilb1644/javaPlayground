@@ -5,23 +5,29 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner k = new Scanner(System.in);
 		int choice;
+		String ans;
+		boolean b = true;
 		
-		while (true) {
+		while (b) {
 			System.out.print("Do you want to create a new...\n"
 					+ "1. Country\n"
 					+ "2. Political\n"
-					+ "3. I don't want anything"
+					+ "3. I don't want anything\n"
 					+ "Which one do you want? ");
 			choice = k.nextInt();
+			
+			ans = k.nextLine();
 			
 			if (choice == 1) {
 				Country yourCountry = new Country();
 				
 				System.out.print("Hello, what is the name of your country? ");
-				yourCountry.setName(k.nextLine());
+				ans = k.nextLine();
+				yourCountry.setName(ans);
 				
 				System.out.print("What is the population of this country? ");
-				yourCountry.setPopulation(k.nextInt());
+				choice = k.nextInt();
+				yourCountry.setPopulation(choice);
 				
 				System.out.print("Which continent is this country from:\n"
 						+ "1. North America\n"
@@ -52,10 +58,12 @@ public class Main {
 				PoliticalParty yourParty = new PoliticalParty();
 				
 				System.out.print("Hello, what is the name of your political party? ");
-				yourParty.setName(k.nextLine());
+				ans = k.nextLine();
+				yourParty.setName(ans);
 				
 				System.out.print("What is the population of this party? ");
-				yourParty.setPopulation(k.nextInt());
+				choice = k.nextInt();
+				yourParty.setPopulation(choice);
 				
 				System.out.print("Which political orientation is this party from:\n"
 						+ "1. Far Left\n"
@@ -87,7 +95,7 @@ public class Main {
 				System.out.println(yourParty);
 			} else {
 				System.out.println("Bye bye");
-				break;
+				b = false;
 			}
 		}
 	}

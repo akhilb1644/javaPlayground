@@ -40,4 +40,8 @@ public class PoliticalParty implements Organization {
 	public void setPoliticalOrientation(Orientation politicalOrientation) {
 		this.politicalOrientation = politicalOrientation;
 	}
+	
+	public String toString() {
+		return String.format("Name: %s \nPopulation: %d \nOrientation: %s",name,population,politicalOrientation);
+	}
 }
