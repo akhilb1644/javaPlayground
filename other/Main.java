@@ -10,7 +10,8 @@ public class Main {
 			System.out.print("Do you want to create a new...\n"
 					+ "1. Country\n"
 					+ "2. Political\n"
-					+ "3. I don't want anything");
+					+ "3. I don't want anything"
+					+ "Which one do you want? ");
 			choice = k.nextInt();
 			
 			if (choice == 1) {
@@ -45,8 +46,48 @@ public class Main {
 				} else {
 					yourCountry.setContinent(Continent.AUSTRALIA);
 				}
-			} else if (choice == 2) {
 				
+				System.out.println(yourCountry);
+			} else if (choice == 2) {
+				PoliticalParty yourParty = new PoliticalParty();
+				
+				System.out.print("Hello, what is the name of your political party? ");
+				yourParty.setName(k.nextLine());
+				
+				System.out.print("What is the population of this party? ");
+				yourParty.setPopulation(k.nextInt());
+				
+				System.out.print("Which political orientation is this party from:\n"
+						+ "1. Far Left\n"
+						+ "2. Left\n"
+						+ "3. Center Left\n"
+						+ "4. Center\n"
+						+ "5. Center Right\n"
+						+ "6. Right\n"
+						+ "7. Far Right\n"
+						+ "Pick One: ");
+				choice = k.nextInt();
+				
+				if (choice == 1) {
+					yourParty.setPoliticalOrientation(Orientation.FAR_LEFT);
+				} else if (choice == 2) {
+					yourParty.setPoliticalOrientation(Orientation.LEFT);
+				} else if (choice == 3) {
+					yourParty.setPoliticalOrientation(Orientation.CENTER_LEFT);
+				} else if (choice == 4) {
+					yourParty.setPoliticalOrientation(Orientation.CENTER);
+				} else if (choice == 5) {
+					yourParty.setPoliticalOrientation(Orientation.CENTER_RIGHT);
+				} else if (choice == 6) {
+					yourParty.setPoliticalOrientation(Orientation.RIGHT);
+				} else {
+					yourParty.setPoliticalOrientation(Orientation.FAR_RIGHT);
+				}
+				
+				System.out.println(yourParty);
+			} else {
+				System.out.println("Bye bye");
+				break;
 			}
 		}
 	}
