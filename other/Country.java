@@ -1,8 +1,14 @@
 package JavaPlaygroundOther;
-public class Country {
+public class Country implements Organization {
 	private int population;
 	private String name;
 	private Continent continent;
+	
+	public Country() {
+		population = 0;
+		name = "";
+		continent = Continent.ASIA;
+	}
 	
 	public Country(int population, String name,Continent continent) {
 		this.population = population;
@@ -10,7 +16,7 @@ public class Country {
 		this.continent = continent;
 	}
 	
-	public int getPopulaion() {
+	public int getPopulation() {
 		return population;
 	}
 	
