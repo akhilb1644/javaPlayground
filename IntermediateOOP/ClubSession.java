@@ -9,11 +9,11 @@ public class ClubSession extends Session {
 		this.setting = setting;
 	}
 	
-	public String getSetting() {
+	final String getSetting() {
 		return setting;
 	}
 	
-	public void setSetting(String setting) {
+	final void setSetting(String setting) {
 		this.setting = setting;
 	}
 }

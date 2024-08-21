@@ -11,19 +11,19 @@ public class ClassSession extends Session {
 		this.setting = setting;
 	}
 	
-	public String getLeader() {
+	final String getLeader() {
 		return leader;
 	}
 	
-	public void setLeader(String leader) {
+	final void setLeader(String leader) {
 		this.leader = leader;
 	}
 	
-	public EduSetting getSetting() {
+	final EduSetting getSetting() {
 		return setting;
 	}
 	
-	public void setSetting(EduSetting setting) {
+	final void setSetting(EduSetting setting) {
 		this.setting = setting;
 	}
 }

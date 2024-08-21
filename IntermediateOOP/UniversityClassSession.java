@@ -9,11 +9,11 @@ public class UniversityClassSession extends ClassSession {
 		this.major = major;
 	}
 	
-	public String getMajor() {
+	final String getMajor() {
 		return major;
 	}
 	
-	public void setMajor(String major) {
+	final void setMajor(String major) {
 		this.major = major;
 	}
 }
